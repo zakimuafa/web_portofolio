@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'orbitron': ['Orbitron', 'monospace'],
+        'outfit': ['Outfit', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        'neon-blue': 'hsl(var(--neon-blue))',
+        'neon-purple': 'hsl(var(--neon-purple))',
+        'neon-cyan': 'hsl(var(--neon-cyan))',
+        'neon-green': 'hsl(var(--neon-green))',
+      },
+      backgroundImage: {
+        'gradient-neon': 'var(--gradient-neon)',
+        'gradient-cyber': 'var(--gradient-cyber)',
+        'gradient-glow': 'var(--gradient-glow)',
       },
       borderRadius: {
         lg: "var(--radius)",
