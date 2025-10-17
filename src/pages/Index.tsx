@@ -242,7 +242,7 @@ const Index = () => {
                 My Journey
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Started my journey in web development during university, quickly
+                Started my journey in web development during school, quickly
                 falling in love with the endless possibilities of creating
                 digital experiences. Over the years, I've worked with startups
                 and established companies, always focusing on delivering
