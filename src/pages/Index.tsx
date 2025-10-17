@@ -160,7 +160,7 @@ const Index = () => {
         "Assisted in developing hospital information systems and retail websites using CodeIgniter 3.Built features like login, register, cart, and invoice printing.Collaborated via GitHub and shared web development.",
     },
     {
-      title: "Automation Developer (EA Trader)r",
+      title: "Automation Developer (EA Trader)",
       company: "freelance",
       period: "2023",
       location: "Bandung, Indonesia",
@@ -188,7 +188,7 @@ const Index = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-orbitron font-bold mb-4">
-            <span className="gradient-text">Hi, I'm Zaki</span>
+            <span className="gradient-text">Hi,I'm Zaki</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-outfit">
