@@ -171,6 +171,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative px-4">
         <div className="absolute inset-0 bg-gradient-glow opacity-30"></div>
