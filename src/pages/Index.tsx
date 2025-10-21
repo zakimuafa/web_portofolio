@@ -91,7 +91,7 @@ const Index = () => {
       journeyTitle: "Perjalanan Saya",
   skillsTitle: "Keterampilan & Teknologi",
       journeyPara1:
-        "Memulai perjalanan saya di pengembangan web saat sekolah, cepat jatuh cinta dengan kemungkinan tak terbatas untuk membuat pengalaman digital. Selama bertahun-tahun, saya bekerja dengan startup dan perusahaan, selalu fokus menghadirkan solusi berkualitas dan berorientasi pengguna.",
+        "Memulai perjalanan saya di pengembangan web saat sekolah, cepat jatuh cinta dengan kemungkinan tak terbatas untuk membuat pengalaman digital. Selama bertahun-tahun,selalu fokus menghadirkan solusi berkualitas dan berorientasi pengguna.",
       journeyPara2:
         "Saat tidak coding, saya biasanya menjelajahi tren teknologi terbaru, berkontribusi pada proyek open-source, atau berbagi pengetahuan dengan komunitas developer.",
       experienceTitle: "Pengalaman & Perjalanan",
