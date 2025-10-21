@@ -59,7 +59,7 @@ const Index = () => {
       journeyTitle: "My Journey",
   skillsTitle: "Skills & Technologies",
       journeyPara1:
-        "Started my journey in web development during school, quickly falling in love with the endless possibilities of creating digital experiences. Over the years, I've worked with startups and established companies, always focusing on delivering high-quality, user-centric solutions.",
+        "Started my journey in web development during school, quickly falling in love with the endless possibilities of creating digital experiences. Over the years,always focusing on delivering high-quality, user-centric solutions.",
       journeyPara2:
         "When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or sharing knowledge with the developer community.",
       experienceTitle: "Experience & Journey",
