@@ -651,7 +651,7 @@ const Index = () => {
                 <CardContent>
                   <div className="grid grid-cols-2 gap-4">
                     <a
-                      href="https://github.com/zaki-muafa"
+                      href="https://github.com/zakimuafa"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
