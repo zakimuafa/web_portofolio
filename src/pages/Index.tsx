@@ -55,9 +55,10 @@ const Index = () => {
       aboutDesc:
         "I'm a passionate web developer with 2+ years of experience building modern, scalable applications. I love learning new technologies and solving complex problems through code.",
       featuredProjects: "Featured Projects",
-      featuredDesc: "Some of my recent work that showcase my skills and passion for development",
+      featuredDesc:
+        "Some of my recent work that showcase my skills and passion for development",
       journeyTitle: "My Journey",
-  skillsTitle: "Skills & Technologies",
+      skillsTitle: "Skills & Technologies",
       journeyPara1:
         "Started my journey in web development during school, quickly falling in love with the endless possibilities of creating digital experiences. Over the years,always focusing on delivering high-quality, user-centric solutions.",
       journeyPara2:
@@ -65,7 +66,8 @@ const Index = () => {
       experienceTitle: "Experience & Journey",
       experienceDesc: "My professional journey and growth in the tech industry",
       contactFormTitle: "Send a Message",
-      contactFormDesc: "Fill out the form and I'll get back to you as soon as possible.",
+      contactFormDesc:
+        "Fill out the form and I'll get back to you as soon as possible.",
       nameLabel: "Name",
       emailLabel: "Email",
       messageLabel: "Message",
@@ -87,17 +89,20 @@ const Index = () => {
       aboutDesc:
         "Saya adalah pengembang web yang bersemangat dengan pengalaman 2+ tahun membangun aplikasi modern dan skalabel. Saya senang mempelajari teknologi baru dan menyelesaikan masalah kompleks melalui kode.",
       featuredProjects: "Proyek Unggulan",
-      featuredDesc: "Beberapa pekerjaan terbaru saya yang menunjukkan keterampilan dan passion dalam pengembangan",
+      featuredDesc:
+        "Beberapa pekerjaan terbaru saya yang menunjukkan keterampilan dan passion dalam pengembangan",
       journeyTitle: "Perjalanan Saya",
-  skillsTitle: "Keterampilan & Teknologi",
+      skillsTitle: "Keterampilan & Teknologi",
       journeyPara1:
         "Memulai perjalanan saya di pengembangan web saat sekolah, cepat jatuh cinta dengan kemungkinan tak terbatas untuk membuat pengalaman digital. Selama bertahun-tahun,selalu fokus menghadirkan solusi berkualitas dan berorientasi pengguna.",
       journeyPara2:
         "Saat tidak coding, saya biasanya menjelajahi tren teknologi terbaru, berkontribusi pada proyek open-source, atau berbagi pengetahuan dengan komunitas developer.",
       experienceTitle: "Pengalaman & Perjalanan",
-      experienceDesc: "Perjalanan profesional dan perkembangan saya di industri teknologi",
+      experienceDesc:
+        "Perjalanan profesional dan perkembangan saya di industri teknologi",
       contactFormTitle: "Kirim Pesan",
-      contactFormDesc: "Isi formulir dan saya akan menghubungi Anda secepatnya.",
+      contactFormDesc:
+        "Isi formulir dan saya akan menghubungi Anda secepatnya.",
       nameLabel: "Nama",
       emailLabel: "Email",
       messageLabel: "Pesan",
@@ -120,7 +125,7 @@ const Index = () => {
     }
 
     const composed = `Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${encodeURIComponent(
-      message
+      message,
     )}`;
 
     try {
@@ -146,7 +151,7 @@ const Index = () => {
     } catch (err) {
       console.error(err);
       alert(
-        "Unable to open WhatsApp or copy message. Please copy and paste manually."
+        "Unable to open WhatsApp or copy message. Please copy and paste manually.",
       );
     }
   };
@@ -259,17 +264,18 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative px-4">
         <div className="absolute inset-0 bg-gradient-glow opacity-30"></div>
         {/* language toggle (top-right of hero) - moved here so it's positioned relative to the full-width section */}
-  <div className="fixed right-4 top-6 md:right-6 md:top-8 lg:right-8 z-50">
+        <div className="fixed right-4 top-6 md:right-6 md:top-8 lg:right-8 z-50">
           <div className="flex items-center space-x-2">
             <button
               onClick={() => setLang("en")}
               className={`px-3 py-1 rounded-md text-sm font-medium transition-opacity ${
-                lang === "en" ? "opacity-100 ring-2 ring-neon-blue" : "opacity-60"
+                lang === "en"
+                  ? "opacity-100 ring-2 ring-neon-blue"
+                  : "opacity-60"
               }`}
               aria-pressed={lang === "en"}
               aria-label="English"
@@ -279,7 +285,9 @@ const Index = () => {
             <button
               onClick={() => setLang("id")}
               className={`px-3 py-1 rounded-md text-sm font-medium transition-opacity ${
-                lang === "id" ? "opacity-100 ring-2 ring-neon-purple" : "opacity-60"
+                lang === "id"
+                  ? "opacity-100 ring-2 ring-neon-purple"
+                  : "opacity-60"
               }`}
               aria-pressed={lang === "id"}
               aria-label="Bahasa Indonesia"
@@ -314,7 +322,6 @@ const Index = () => {
             {t[lang].description}
           </p>
 
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               variant="hero"
@@ -328,7 +335,10 @@ const Index = () => {
             <Button asChild variant="neon-outline" size="lg">
               {/* Place your PDF in the public/ folder as `portofolio-muhamad-zaki-muafa.pdf` */}
               {/* Use different filenames for each language in public/ */}
-              <a href={lang === "en" ? "/cv-en.pdf" : "/cv-id.pdf"} download={lang === "en" ? "cv-en.pdf" : "cv-id.pdf"}>
+              <a
+                href={lang === "en" ? "/cv-en.pdf" : "/cv-id.pdf"}
+                download={lang === "en" ? "cv-en.pdf" : "cv-id.pdf"}
+              >
                 <Download className="mr-2 h-5 w-5" />
                 {t[lang].downloadCV}
               </a>
@@ -342,11 +352,11 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4 gradient-text">
-                {t[lang].aboutTitle}
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                {t[lang].aboutDesc}
-              </p>
+              {t[lang].aboutTitle}
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              {t[lang].aboutDesc}
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -391,9 +401,11 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4 gradient-text">
-                {t[lang].featuredProjects}
-              </h2>
-              <p className="text-lg text-muted-foreground">{t[lang].featuredDesc}</p>
+              {t[lang].featuredProjects}
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              {t[lang].featuredDesc}
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -502,7 +514,9 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4 gradient-text">
               {t[lang].experienceTitle}
             </h2>
-            <p className="text-lg text-muted-foreground">{t[lang].experienceDesc}</p>
+            <p className="text-lg text-muted-foreground">
+              {t[lang].experienceDesc}
+            </p>
           </div>
 
           <div className="relative">
@@ -543,7 +557,11 @@ const Index = () => {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">{lang === "en" ? exp.description_en : exp.description_id}</p>
+                      <p className="text-muted-foreground">
+                        {lang === "en"
+                          ? exp.description_en
+                          : exp.description_id}
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -557,10 +575,12 @@ const Index = () => {
       <section id="contact-section" className="py-20 px-4 bg-card/30">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4 gradient-text">
-                {t[lang].contactTitle}
-              </h2>
-              <p className="text-lg text-muted-foreground">{t[lang].contactDesc}</p>
+            <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4 gradient-text">
+              {t[lang].contactTitle}
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              {t[lang].contactDesc}
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -586,7 +606,9 @@ const Index = () => {
                 >
                   {/* Controlled form fields */}
                   <div>
-                    <label className="block text-sm font-medium mb-2">{t[lang].nameLabel}</label>
+                    <label className="block text-sm font-medium mb-2">
+                      {t[lang].nameLabel}
+                    </label>
                     <Input
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -595,7 +617,9 @@ const Index = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">{t[lang].emailLabel}</label>
+                    <label className="block text-sm font-medium mb-2">
+                      {t[lang].emailLabel}
+                    </label>
                     <Input
                       type="email"
                       value={email}
@@ -605,7 +629,9 @@ const Index = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">{t[lang].messageLabel}</label>
+                    <label className="block text-sm font-medium mb-2">
+                      {t[lang].messageLabel}
+                    </label>
                     <Textarea
                       placeholder="Tell me about your project..."
                       rows={5}
@@ -629,8 +655,10 @@ const Index = () => {
             {/* Contact Info & Social */}
             <div className="space-y-8">
               <Card className="glass neon-border">
-                  <CardHeader>
-                  <CardTitle className="text-2xl font-orbitron text-neon-purple">{t[lang].getInTouch}</CardTitle>
+                <CardHeader>
+                  <CardTitle className="text-2xl font-orbitron text-neon-purple">
+                    {t[lang].getInTouch}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3">
@@ -645,8 +673,10 @@ const Index = () => {
               </Card>
 
               <Card className="glass neon-border">
-                  <CardHeader>
-                  <CardTitle className="text-2xl font-orbitron text-neon-cyan">{t[lang].followMe}</CardTitle>
+                <CardHeader>
+                  <CardTitle className="text-2xl font-orbitron text-neon-cyan">
+                    {t[lang].followMe}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-2 gap-4">
@@ -699,7 +729,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-        <footer className="py-8 text-center border-t border-border/30">
+      <footer className="py-8 text-center border-t border-border/30">
         <p className="text-muted-foreground">{t[lang].footer}</p>
       </footer>
     </div>
