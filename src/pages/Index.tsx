@@ -328,7 +328,7 @@ const Index = () => {
             <Button asChild variant="neon-outline" size="lg">
               {/* Place your PDF in the public/ folder as `portofolio-muhamad-zaki-muafa.pdf` */}
               {/* Use different filenames for each language in public/ */}
-              <a href={lang === "en" ? "/cv-en.pdf" : "/cv-id.pdf"} download>
+              <a href={lang === "en" ? "/cv-en.pdf" : "/cv-id.pdf"} download={lang === "en" ? "cv-en.pdf" : "cv-id.pdf"}>
                 <Download className="mr-2 h-5 w-5" />
                 {t[lang].downloadCV}
               </a>
