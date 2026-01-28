@@ -29,7 +29,6 @@ import {
 } from "lucide-react";
 
 // Import assets
-import profilePhoto from "@/assets/profile-photo.jpg";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
 import projectTaskApp from "@/assets/project-taskapp.jpg";
 import projectWeather from "@/assets/project-weather.jpg";
@@ -302,14 +301,6 @@ const Index = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="relative mb-8">
-            <img
-              src={profilePhoto}
-              alt="Zaki Profile Photo"
-              className="w-40 h-40 mx-auto rounded-full border-4 border-neon-blue glow-blue floating object-cover"
-            />
-          </div>
-
           <h1 className="text-5xl md:text-7xl font-orbitron font-bold mb-4">
             <span className="gradient-text">{t[lang].hi}</span>
           </h1>
